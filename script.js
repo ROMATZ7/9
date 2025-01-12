@@ -101,7 +101,7 @@ function movePlayer(direction) {
 function checkWin() {
     const { row, col } = playerPosition;
     if (maze[row][col] === "G") {
-        messageElement.textContent = "🎉 ¡Ganaste! Contraseña: TEqUIEROentodosLosUNIVERSOs.";
+        messageElement.textContent = "🎉 ¡Ganaste! Contraseña: TEqUIEROentodosLosUNIVERSOs. PULSA LA CELDA 11X9";
         document.removeEventListener("keydown", handleKeyPress);
     }
 }
