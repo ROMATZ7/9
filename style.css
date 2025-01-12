@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff9aa2, #f3e6e8); /* Tonos rosa claro y blanco */
+    color: black; /* Negro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+#password-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff6f91, #ffe6e6); /* Rosa oscuro y blanco */
+    color: black; /* Negro */
+    text-align: center;
+}
+
+#password-screen input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 2px solid #ff6f91; /* Rosa oscuro */
+    border-radius: 5px;
+    outline: none;
+    width: 250px;
+}
+
+#password-screen button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6f91; /* Rosa oscuro */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#password-screen button:hover {
+    background-color: #ff3f6c; /* Rosa más oscuro */
+}
+
+.hidden {
+    display: none;
+}
+
+#game-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+    width: 400px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ff3f6c; /* Rosa más oscuro */
+    text-shadow: 1px 1px black; /* Sombra negra */
+}
+
+#maze-container {
+    position: relative;
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    background-color: #ffc1cc; /* Rosa claro */
+    border: 2px solid #ff6f91; /* Rosa oscuro */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2px;
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cell.wall {
+    background-color: black;
+}
+
+.cell.goal {
+    background-color: #ff3f6c; /* Rosa más oscuro */
+}
+
+#player {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-color: #ff6f91; /* Rosa oscuro */
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff6f91; /* Rosa oscuro */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #ff3f6c; /* Rosa más oscuro */
+}

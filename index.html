@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>10. LABERINTO</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Laberinto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla de contraseña -->
+    <div id="password-screen">
+        <h1>Introduce la contraseña para jugar</h1>
+        <input type="password" id="password" placeholder="Escribe la contraseña">
+        <button onclick="checkPassword()">Entrar</button>
+        <p id="error-message" class="hidden">Contraseña incorrecta. Intenta de nuevo.</p>
+    </div>
+
+    <!-- Contenedor del juego -->
+    <div id="game-container" class="hidden">
+        <h1>🏁 LABERINTO 🏁</h1>
+        <div id="time-container">
+            <p id="current-time">Hora actual: --:--:--</p>
+            <p id="countdown">⏳ Tiempo restante para jugar...</p>
+        </div>
+        <div id="maze-container">
+            <!-- El laberinto será generado dinámicamente -->
+        </div>
+        <p id="message"></p>
+        <button id="start-button">Iniciar Juego</button>
+        <button id="reset-button" disabled>Reiniciar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
